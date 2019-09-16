@@ -5,7 +5,7 @@
       <mat-form-field>
       <mat-select placeholder="Favorite food">
         <mat-option *ngFor="let exercise of exercises" [value]="exercise.id">
-          {{ exercise}}
+          {{ exercise.name }}
         </mat-option>
       </mat-select>
       </mat-form-field>
