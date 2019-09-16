@@ -16,6 +16,8 @@ import { PastTrainingsComponent } from './training/past-trainings/past-trainings
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { StopTrainingComponent } from './training/current-training/stop-training.component';
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { HelloComponent } from './hello.component';
@@ -40,8 +42,10 @@ import { HelloComponent } from './hello.component';
     PastTrainingsComponent,
     WelcomeComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    StopTrainingComponent
     ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule { }
